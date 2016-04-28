@@ -6,9 +6,11 @@ $(document).ready(function () {
         success: function (data) {
             if (data.on) {
                 $('#stopbtn').prop('disabled', false);
+                $('#interval').prop('disabled', true);
                 $('#startbtn').prop('disabled', true);
             } else {
                 $('#stopbtn').prop('disabled', true);
+                $('#interval').prop('disabled', false);                
                 $('#startbtn').prop('disabled', false);
             }
         }
@@ -20,6 +22,7 @@ $(document).ready(function () {
         event.preventDefault();
         $('#stopbtn').prop('disabled', false);
         $('#startbtn').prop('disabled', true);
+        $('#interval').prop('disabled', true);
         var interval = $('#interval').val();
         var isNumber = !isNaN(interval);
         if (!isNumber) {
@@ -49,6 +52,7 @@ $(document).ready(function () {
         event.preventDefault();
         $('#stopbtn').prop('disabled', true);
         $('#startbtn').prop('disabled', false);
+        $('#interval').prop('disabled', false);
 
         $.ajax({
             url: '/stop',
