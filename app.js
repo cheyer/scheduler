@@ -5,6 +5,17 @@ var logger = require('morgan');
 var cookieParser = require('cookie-parser');
 var bodyParser = require('body-parser');
 
+
+// the cfenv module helps to access the Cloud Foundry environment
+var cfenv = require('cfenv');
+// Get the application environment from Cloud Foundry
+var appEnv = cfenv.getAppEnv();
+console.log("dashdb");
+console.log(appEnv.getServiceCreds('cheyer-dashdb'));
+console.log("objectstore");
+console.log(appEnv.getServiceCreds('obi'));
+
+
 var routes = require('./routes/index');
 
 

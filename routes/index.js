@@ -5,6 +5,16 @@ var timer;
 
 // do something here
 var action = function () {
+    /*
+     * TODO
+     *
+     * connect to dash db
+     * get csv
+     * connect to object store
+     * write csv
+     *
+     */
+    
     console.log("doing something ... ");
 }
 
