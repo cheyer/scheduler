@@ -1,0 +1,59 @@
+body {
+    padding: 50px;
+    font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+}
+
+a {
+    color: #00B7FF;
+}
+
+input[type=number] {
+    padding: 10px;
+    margin: 10px;
+    color: #7f8c8d;
+    border: 1px solid #7f8c8d;
+}
+
+.btn {
+    padding: 10px;
+    margin: 10px;
+    border: 1px solid black;
+    border-radius: 0;
+    cursor: pointer;
+    background: white;
+    color: black;
+}
+
+.btn#startbtn {
+    border-color: #27ae60;
+    color: #27ae60;
+}
+
+.btn#startbtn:hover {
+    background: #27ae60;
+    color: white;
+}
+
+.btn#stopbtn {
+    border-color: #e74c3c;
+    color: #e74c3c;
+}
+
+.btn#stopbtn:hover {
+    background: #e74c3c;
+    color: white;
+}
+
+#stopbtn:disabled,
+#startbtn:disabled {
+    color: #7f8c8d;
+    border: 1px solid #7f8c8d;
+    cursor: default;
+}
+
+#stopbtn:disabled:hover,
+#startbtn:disabled:hover {
+    background: white;
+    color: #7f8c8d;
+    border: 1px solid #7f8c8d;
+}

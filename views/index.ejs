@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Cron Job</title>
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+    <script src="https://code.jquery.com/jquery-2.2.3.min.js" integrity="sha256-a23g1Nt4dtEYOj7bR+vTu7+T8VP13humZFBJNIYoEJo=" crossorigin="anonymous"></script>
+    <script src="javascripts/app.js"></script>
+</head>
+
+<body>
+    <h1>Set Cron Job</h1>
+    <p>For exporting a .CSV file from DashDB and import it in the ObjectStore
+    </p>
+    <form id="createjob">
+        <label>Time interval: </label>
+        <input type="number" value="1" name="interval" id="interval"><br>
+        <input type="submit" value="Start Job" class="btn" id="startbtn" disabled>
+
+    </form>
+    <form id="stopjob">
+        <input type="submit" value="Stop Job" class="btn" id="stopbtn" disabled>
+    </form>
+</body>
+
+</html>
